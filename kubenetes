@@ -1,4 +1,26 @@
 https://github.com/KamranAzeem/learn-kubernetes/tree/master/kubeadm
+https://linuxconfig.org/allow-ssh-root-login-on-ubuntu-18-04-bionic-beaver-linux
 
-sudo apt-get purge openssh-server 
-sudo apt-get install openssh-server
+1. set password for root (default it's come with empty)
+sudo passwd
+2. sudo apt-get purge openssh-server 
+3. sudo apt-get install openssh-server
+4. sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config (!root)
+5. sudo service ssh restart (!root)
+6. ssh root@kubernetes-node1 (!VM)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
