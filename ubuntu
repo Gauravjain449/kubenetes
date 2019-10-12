@@ -1,1 +1,6 @@
-Check ubuntu version : lsb_release -a
+Check ubuntu version :
+1. lsb_release -a
+2. Alternate : cat /etc/lsb-release
+
+# How to check os version in Linux command line
+
