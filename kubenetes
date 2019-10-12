@@ -9,6 +9,10 @@ sudo passwd
 5. sudo service ssh restart (!root)
 6. ssh root@kubernetes-node1 (!VM)
 
+https://vitux.com/install-and-deploy-kubernetes-on-ubuntu/
+
+sudo kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+
 
 
 
