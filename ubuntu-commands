@@ -1,1 +1,2 @@
 sudo mkdir /commands
+ls -l : get lists
