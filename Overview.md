@@ -20,3 +20,9 @@ https://d33wubrfki0l68.cloudfront.net/26a177ede4d7b032362289c6fccd448fc4a91174/e
 
 ## Understanding Kubernetes Objects
 
+* Most often, you provide the information to kubectl in a .yaml file. kubectl converts the information to JSON when making the API request.
+
+### Kubernetes Object Management
+
+
+
