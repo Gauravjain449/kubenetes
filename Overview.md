@@ -15,3 +15,8 @@ https://d33wubrfki0l68.cloudfront.net/26a177ede4d7b032362289c6fccd448fc4a91174/e
 
 ## The Kubernetes API
 
+* The kubectl command-line tool can be used to create, update, delete, and get API objects.
+* Kubernetes also stores its serialized state (currently in etcd) in terms of the API resources.
+
+## Understanding Kubernetes Objects
+
