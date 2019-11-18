@@ -25,6 +25,9 @@ https://d33wubrfki0l68.cloudfront.net/26a177ede4d7b032362289c6fccd448fc4a91174/e
 ### Kubernetes Object Management
 
 
+https://serverfault.com/questions/633183/how-do-i-enable-kvm-device-passthrough-in-linux
+
+
 
 
 
