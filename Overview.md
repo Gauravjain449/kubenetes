@@ -27,6 +27,9 @@ https://d33wubrfki0l68.cloudfront.net/26a177ede4d7b032362289c6fccd448fc4a91174/e
 
 https://serverfault.com/questions/633183/how-do-i-enable-kvm-device-passthrough-in-linux
 
+virt-host-validate
+
+
 
 
 
