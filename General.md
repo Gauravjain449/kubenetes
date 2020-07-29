@@ -14,4 +14,31 @@ Does not deploy source code and does not build your application. Continuous Inte
 
 Day2:
 ---
-https://kubernetes.io/docs/concepts/overview/components/
+![Alt test](https://d33wubrfki0l68.cloudfront.net/7016517375d10c702489167e704dcb99e570df85/7bb53/images/docs/components-of-kubernetes.png)
+
+Control plane components can be run on any machine in the cluster. However, for simplicity, set up scripts typically start all control plane components on the same machine, and do not run user containers on this machine.
+
+Control Plane component that runs controller processes:- 
+Logically, each controller is a separate process, but to reduce complexity, they are all compiled into a single binary and run in a single process.
+
+These controllers include:
+
+Node controller: Responsible for noticing and responding when nodes go down.
+Replication controller: Responsible for maintaining the correct number of pods for every replication controller object in the system.
+Endpoints controller: Populates the Endpoints object (that is, joins Services & Pods).
+Service Account & Token controllers: Create default accounts and API access tokens for new namespaces
+
+The following controllers can have cloud provider dependencies:
+Node controller: For checking the cloud provider to determine if a node has been deleted in the cloud after it stops responding
+Route controller: For setting up routes in the underlying cloud infrastructure
+Service controller: For creating, updating and deleting cloud provider load balancers
+
+Day 3:
+---
+https://kubernetes.io/docs/concepts/overview/kubernetes-api/
+
+
+
+
+
+
