@@ -35,7 +35,7 @@ Service controller: For creating, updating and deleting cloud provider load bala
 
 Day 3:
 ---
-https://kubernetes.io/docs/concepts/overview/working-with-objects/object-management/
+https://kubernetes.io/docs/concepts/overview/working-with-objects/names/
 
 
 
