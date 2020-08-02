@@ -35,7 +35,31 @@ Service controller: For creating, updating and deleting cloud provider load bala
 
 Day 3:
 ---
-https://kubernetes.io/docs/concepts/overview/working-with-objects/names/
+kube-node-lease This namespace for the lease objects associated with each node which improves the performance of the node heartbeats as the cluster scales
+
+Setting the namespace preference
+You can permanently save the namespace for all subsequent kubectl commands in that context.
+
+kubectl config set-context --current --namespace=<insert-namespace-name-here>
+# Validate it
+kubectl config view --minify | grep namespace:
+  
+Not All Objects are in a Namespace
+Most Kubernetes resources (e.g. pods, services, replication controllers, and others) are in some namespaces. However namespace resources are not themselves in a namespace. And low-level resources, such as nodes and persistentVolumes, are not in any namespace.
+
+To see which Kubernetes resources are and aren't in a namespace:
+
+# In a namespace
+kubectl api-resources --namespaced=true
+
+# Not in a namespace
+kubectl api-resources --namespaced=false
+
+
+Day 4:
+---
+https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
+
 
 
 
