@@ -59,6 +59,51 @@ kubectl api-resources --namespaced=false
 Day 4:
 ---
 https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
+The API currently supports two types of selectors: equality-based and set-based.
+
+Caution: For both equality-based and set-based conditions there is no logical OR (||) operator.
+
+Equality-based requirement are =,==,!=
+
+Set-based requirement are in,notin and exists
+
+Set-based requirements can be mixed with equality-based requirements.
+For example: partition in (customerA, customerB),environment!=qa
+
+using equality-based one may write:
+
+kubectl get pods -l environment=production,tier=frontend
+or using set-based requirements:
+
+kubectl get pods -l 'environment in (production),tier in (frontend)'
+
+
+IMP
+---
+In Service and ReplicationController only equality-based requirement selectors are supported.
+e.g. 
+
+selector:
+    component: redis
+    
+Resources that support set-based requirements:-
+Newer resources, such as Job, Deployment, ReplicaSet, and DaemonSet, support set-based requirements as well.
+e.g.
+selector:
+  matchLabels:
+    component: redis
+  matchExpressions:
+    - {key: tier, operator: In, values: [cache]}
+    - {key: environment, operator: NotIn, values: [dev]}
+    
+---
+Day 5:
+https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
+
+
+
+
+
 
 
 
