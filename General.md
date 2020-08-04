@@ -98,7 +98,7 @@ selector:
     
 ---
 Day 5:
-https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
+https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/
 
 
 
