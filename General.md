@@ -98,7 +98,11 @@ selector:
     
 ---
 Day 5:
-https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/
+https://kubernetes.io/docs/concepts/architecture/nodes/
+
+To mark a Node unschedulable, run: kubectl cordon $NODENAME
+
+Capacity and Allocatable
 
 
 
