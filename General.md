@@ -105,7 +105,7 @@ To mark a Node unschedulable, run: kubectl cordon $NODENAME
 Capacity and Allocatable
 
 Day 6:
-https://kubernetes.io/docs/concepts/architecture/cloud-controller/
+https://kubernetes.io/docs/concepts/containers/
 
 
 
